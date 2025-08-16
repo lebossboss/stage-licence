@@ -6,3 +6,8 @@ buildCommand = "composer install --no-dev --optimize-autoloader"
 startCommand = "php artisan serve --host 0.0.0.0 --port $PORT"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+
+[environments.production]
+APP_URL = "https://stage-licence-production.up.railway.app"
+APP_ENV = "production"
+DB_CONNECTION = "railway"
